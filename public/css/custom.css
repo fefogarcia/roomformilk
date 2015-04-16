@@ -13,7 +13,6 @@
 
     background-image: url('/images/header-bg.jpg');
     background-color: #3A485E;
-    background-attachment: fixed;
     padding-top: 2%;
     padding-bottom: 2%;
     color: #eee;
@@ -22,11 +21,27 @@
 
   #header {
   	height: 200px;
+    background-attachment: fixed;
     background-position: center;
   }
 
   #footer {
-    background-position: bottom;
+    background-attachment: scroll;
+    background-position: top;
+  }
+
+  #footer li {
+    list-style-type: none;
+  }
+
+/*  #footer li:before{
+    content: "- ";
+  }
+*/
+
+  #footer a {
+    color: inherit;
+    text-decoration: inherit;
   }
 
   #subheader {
@@ -38,6 +53,14 @@
     background-repeat: no-repeat;
     /*height: 150px;*/
     color: #fff;
+  }
+
+  #subfooter {
+    background-color: #222;
+    color: #fff;
+    font-size: .8em;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
 

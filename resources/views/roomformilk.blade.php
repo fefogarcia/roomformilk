@@ -62,9 +62,42 @@
 <div class="full-width" id="footer">
   <div class="container">
     <div class="row">
+      <div class="two columns">
+        <h6>Room For Milk:</h6>
+      </div>
+      <div class="two columns">
+        	<ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+      </div>
+      <div class="two columns">
+        <h6>Felipe Garcia:</h6>
+      </div>
+      <div class="two columns">
+          <ul>
+            <li><a href="http://linkedin.com/in/fefogarcia" target="_blank">LinkedIn</a></li>
+            <li><a href="http://twitter.com/talktofefo" target="_blank">Twitter</a></li>
+            <li><a href="http://github.com/fefogarcia" target="_blank">GitHub</a></li>
+          </ul>
+      </div>
+      <div class="four columns">
+        <div style="text-align: center">
+          <a href="/"><img src="/logo/400/100/light" style="width: 100%" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="full-width" id="subfooter">
+  <div class="container">
+    <div class="row">
       <div class="twelve column">
-      	<p style="text-align: center">
-        	Copyright 2015 Room For Milk
+        <div style="text-align: center">
+          Copyright 2015 Felipe Garcia // Room For Milk
         </div>
       </div>
     </div>
