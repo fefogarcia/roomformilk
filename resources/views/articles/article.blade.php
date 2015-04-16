@@ -33,7 +33,7 @@
 		        <div class="response" id="mce-success-response" style="display:none"></div>
 		    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 		    <div style="position: absolute; left: -5000px;"><input type="text" name="b_8bf6015af5ddfba77d30c7db9_7ae91179df" tabindex="-1" value=""></div>
-		    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+		    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-primary"></div>
 		    </div>
 		</form>  
 		</div>  
