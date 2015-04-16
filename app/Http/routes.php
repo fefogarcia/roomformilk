@@ -64,3 +64,15 @@ Route::get('express/{productId}', function($productId) {
 	return View::make('express/product', ['product' => $product, 'products' => $products]);
 
 });
+
+Route::get('contact/', function() {
+
+	return View::make('contact');
+
+});
+
+Route::get('about/', function() {
+
+	return View::make('about');
+
+});
