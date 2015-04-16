@@ -11,7 +11,13 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+// Route::get('/', 'WelcomeController@index');
+
+Route::get('/', function() {
+
+	return redirect('/express/');
+
+});
 
 Route::get('home', 'HomeController@index');
 
@@ -43,6 +49,18 @@ Route::get('logo/{width}/{height}/{type}', function($width, $height, $type) {
 
 Route::get('express', function() {
 
-	return 'success';
+	$products = App\Product::all();
+
+	return View::make('express/products', ['products' => $products, 'count' => 0]);
+
+});
+
+Route::get('express/{productId}', function($productId) {
+
+	$products = App\Product::all();
+
+	$product = App\Product::find($productId);
+
+	return View::make('express/product', ['product' => $product, 'products' => $products]);
 
 });

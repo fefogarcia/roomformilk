@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>@yield('title')</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -19,35 +19,52 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="/images/favicon.png?v=2">
 
-  <style>
-
-  .full-width {
-	width: 100%;
-	max-width: 100%;
-	clear: both;
-	margin: 0 auto;
-  }
-
-  </style>
 
 </head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="full-width" style="background-color: #3A485E; padding-top: 5%; padding-bottom: 5%">
+<div class="full-width" id="header">
+  <div class="container">
+    <div class="row">
+      <div class="eight columns offset-by-two">
+      	<div style="text-align: center" id="logo">
+        	<a href="/"><img src="/logo/1000/200/light" style="width: 100%" /></a><br/>
+          @yield('h2')
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+@yield('subheader')
+
+
+<div class="full-width">
+  <div class="container" style="margin-top: 5%; margin-bottom: 5%">
+      	
+      	@yield('content')
+
+  </div>
+</div>
+
+
+
+<div class="full-width" id="footer">
   <div class="container">
     <div class="row">
       <div class="twelve column">
-      	<div style="text-align: center">
-        	<img src="/logo/1000/200/light" style="width: 65%" />
+      	<p style="text-align: center">
+        	Copyright 2015 Room For Milk
         </div>
       </div>
     </div>
@@ -55,24 +72,47 @@
 </div>
 
 
-<div class="full-width">
-  <div class="container">
-    <div class="row" style="margin-top: 10%">
-      <div class="one-half column">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
-  </div>
-</div>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src='/js/jquery.blast.min.js'></script>
 
+<script>
 
+$(window).scroll(function () {
 
+  var chars = $('h2').blast({
+    delimiter: 'character'
+  });
 
+  var newOpacity = 1 - ($(this).scrollTop() / 75);
+  $('#logo').css('opacity', newOpacity);
 
+});
+
+// chars.each(function(i) {
+//   // initialize position
+//   alert(this.innerHTML.charCodeAt(0));
+// });
+
+// alert(chars[1].innerHTML.charCodeAt(0));
+
+</script>
+
+<!-- Scroll reveal stuff -->
+
+<script src='/js/scrollReveal.min.js'></script>
+<script>
+
+      var config = {
+        scale: { power: '0' },
+        easing: 'hustle',
+        // reset:  true,
+        delay:  'onload',
+        vFactor: 0.90
+      }
+
+      window.sr = new scrollReveal( config );
+
+</script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
