@@ -1,6 +1,6 @@
 @extends('roomformilk')
 
-@section('title', "Room For Milk :: Contact")
+@section('title', "Room For Milk :: About")
 
 @section('h2', '<h2>ABOUT</h2>')
 

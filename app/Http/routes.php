@@ -82,3 +82,21 @@ Route::get('about/', function() {
 	return View::make('about');
 
 });
+
+Route::get('articles/', function() {
+
+	$articles = App\Article::all();
+
+	return View::make('articles.articles', ['articles' => $articles]);
+
+});
+
+Route::get('articles/id/{articleId}', function($articleId) {
+
+	$articles = App\Article::all();
+
+	$article = App\Article::find($articleId);
+
+	return View::make('articles.article', ['article' => $article, 'articles' => $articles]);
+
+});
