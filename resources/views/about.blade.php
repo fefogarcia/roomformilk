@@ -17,7 +17,7 @@
 
 I spent the first 7 years of my career working in the digital marketing industry, both as a freelancer and in-house. Over time I noticed that, aside from my usual duties as a designer and developer, I would spend a lot of my time finding inefficiencies and automating them to save costs for my clients and employers.
 
-I eventually went back to school and got a Master's degree in Design Management, where I learned about Operations Management and the study of productivity.
+I eventually went back to school (Pratt Institute in New York City) and got a Master's degree in Design Management, where I fell in love with Operations Management and the study of productivity.
 
 Upon graduating, I was lucky enough to help manage products at American Express and Gap, and that experience taught me that a lot of the strategies corporations use to save costs and produce more can also be applied to smaller businesses, even online ones.
 

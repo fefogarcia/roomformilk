@@ -47,7 +47,7 @@ Route::get('logo/{width}/{height}/{type}', function($width, $height, $type) {
 });
 
 
-Route::get('express', function() {
+Route::get('express/', function() {
 
 	$products = App\Product::all();
 
@@ -55,7 +55,7 @@ Route::get('express', function() {
 
 });
 
-Route::get('express/{productId}', function($productId) {
+Route::get('express/{productId}/', function($productId) {
 
 	$products = App\Product::all();
 
@@ -67,7 +67,13 @@ Route::get('express/{productId}', function($productId) {
 
 Route::get('contact/', function() {
 
-	return View::make('contact');
+	$success = '';
+
+	if (Input::get('sent') == 1) {
+		$success = '<h5 style="text-align: center">Your message has been sent successfully.</h5>';
+	}
+
+	return View::make('contact', ['success' => $success]);
 
 });
 

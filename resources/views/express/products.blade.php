@@ -39,7 +39,7 @@
 
 		<p>{!! Markdown::convertToHtml($product->intro) !!}</p>
 
-		<p style="text-align: center"><a class="button button-primary" href="/express/{{ $product->id }}">Read More</a></p>
+		<p style="text-align: center"><a class="button button-primary" href="/express/{{ $product->id }}/">Read More</a></p>
 
 	</div>
 
