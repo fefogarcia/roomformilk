@@ -100,3 +100,13 @@ Route::get('articles/id/{articleId}', function($articleId) {
 	return View::make('articles.article', ['article' => $article, 'articles' => $articles]);
 
 });
+
+Route::get('get/{landingPageId}/', function($landingPageId) {
+
+	$landingPage = App\LandingPage::find($landingPageId);
+
+	$product = App\Product::find($landingPage->product_id);
+
+	return View::make('landing', ['landingPage' => $landingPage, 'product' => $product]);
+
+});
