@@ -28,7 +28,9 @@
 @if ($count % 2 == 0)
 
 	<div class="one-half column">
-		<img src="/images/{{ $product->id }}.jpg" style="width: 100%; border-radius: 2%" />
+		<a href="/express/{{ $product->id }}/">
+			<img src="/images/{{ $product->id }}.jpg" style="width: 100%; border-radius: 2%" />
+		</a>
 	</div>
 
 @endif
@@ -46,7 +48,9 @@
 @if ($count % 2 == 1)
 
 	<div class="one-half column">
-		<img src="/images/{{ $product->id }}.jpg" style="width: 100%; border-radius: 2%" />
+		<a href="/express/{{ $product->id }}/">
+			<img src="/images/{{ $product->id }}.jpg" style="width: 100%; border-radius: 2%" />
+		</a>
 	</div>
 
 @endif
