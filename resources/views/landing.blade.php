@@ -8,8 +8,8 @@
   <div class="container">
     <div class="row">
       <div class="eight columns offset-by-two">
-		<br/><br/><br/>
-		<h3>{{ $product->name }}</h3>
+		<br/><br/><br/><br/><br/>
+		<h3>{{ $landingPage->headline }}</h3>
       </div>
     </div>
   </div>
