@@ -8,9 +8,9 @@
 
 	<div class="twelve columns">
 
-		<h5>For most smaller online businesses, a full operational setup is nothing short of overkill.</h5>
+		<h5>For most smaller businesses, a full operational setup for their online presence is overwhelming and might even be overkill.</h5>
 
-		<p>With <strong>Room For Milk Express</strong>, you can buy on-demand systems that will generate immediate value for your company, for a fraction of the price of a full-fledged operational strategy.</p>
+		<p>With <strong>Room For Milk Express</strong>, you can get on-demand systems installed on your website that will generate immediate value for your company, for a fraction of the price of a full-fledged operational strategy.</p>
 
 		<p>Get one, or get them all – pay only for what you need.</p>
 
