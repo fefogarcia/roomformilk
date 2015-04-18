@@ -11,13 +11,13 @@
 |
 */
 
-// Route::get('/', 'WelcomeController@index');
+Route::get('/', 'WelcomeController@index');
 
-Route::get('/', function() {
+// Route::get('/', function() {
 
-	return redirect('/express/');
+// 	return redirect('/express/');
 
-});
+// });
 
 Route::get('home', 'HomeController@index');
 

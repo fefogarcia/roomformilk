@@ -10,64 +10,43 @@
 
 {!! Markdown::convertToHtml("
 
-#### When you pictured yourself finally owning your own business, did you also see yourself wearing too many hats, doing busywork for hours a day?
+<!-- # Is Running Your Own Business Draining Your Energy? -->
 
-Did you see yourself exhausted, trying to follow up on leads that turned out to be dead ends, following every marketing tip in the book (or blog), overwhelmed by how much work you have to do in exchange for a small amount of revenue?
+##### Running a company is hard.
 
-##### Of course not.
+The amount of hats you have to wear stands in stark contrast to how you imagined yourself spending your days.
 
-At the end of the day, you’re in business to do what you’re great at.
+- **You feel stressed** as tasks slip through the cracks and you can't prioritize
+- **You struggle** to stay on top of your inbox
+- **You have paper piling up** faster than you can handle
+- **You know there must be better ways**, but you have no time to look for them
 
-- You are not in business to schedule customers in.
-- You are not in business to chase delinquent clients.
-- You are not in business to learn productivity software.
+You've read productivity blogs, memorized &rdquo;life hacks&rdquo; (and immediately forgot them), cluttered your phone with too many to-do apps. And yet when the rubber hits the road, **you're left with too much to do and too few hours in the day**.
 
-But if you’re not in business to do those things, then why do you find yourself constantly doing them?
+##### It doesn't need to be this way.
 
-#### What would you do with two extra hours every week?
+A productivity consultant can help you:
 
-How much further would your business be now **if you could reclaim all the hours you’ve spent doing repetitive work?** If administrative tasks such as scheduling, email sorting, marketing emails, all took care of themselves? More importantly, how many customers would you be able to keep by making their lives easier in the process?
+- **Have more time for yourself** by freeing up time you currently spend working. Give your family and friends the quality time they deserve.
+- **Increase your profits** by having more capacity. Less time on busywork means more time for actual business.
+- **Focus on what only you can do** by delegating, outsourcing and automating the rest. Reinventing the wheel is always counterproductive.
 
-All without having to hire full-time staff that you then have to manage, meaning you might as well go back to doing the work yourself.
+Time to go back to the reason you're in business.
 
-The bad news is: the wasted time is already wasted. **But the good, amazing news is: you don’t need to waste it anymore**.
+##### Productivity tricks won't help you if you don't know which parts to fix.
 
-#### Enter Room For Milk.
+The first thing we'll do is spend a few days monitoring your daily activities at work – people often don't realize how much of their time goes into repetitive or even unnecessary tasks.
 
-Room For Milk was born from my experience helping companies (both small and large) with their design workflow, and from my realization that most small businesses exist under the belief that operations management and automation are a luxury reserved for Fortune 500 corporations with several moving parts.
+Then, once we have a clear picture of the way you spend your time, we start a two-part process:
 
-Nothing could be further from the truth – in fact, corporations can afford to waste resources in a way that most small businesses can't.
+1. We **identify** what can be automated or outsourced and design a system around those.
+2. We **rewrite** your daily schedule, now with much more slack in the canvas.
 
-Let's get your time and energy back.
+I then follow-up with you in two weeks, to see how well the new system is working, and we make changes on the parts that aren't. **I don't rest until you're making the most of your time**.
 
-##### What You Put In
+##### Reclaim your time before it claims you.
 
-With a short conversation over phone or Skype, I get:
-- an understanding of how your business currently operates
-- what your goals are for the way you spend your work hours
-
-Then I set off to work.
-
-##### What You Get
-
-Once I'm done, you get a document detailing improvements not only for back-office tasks such as scheduling and personnel handling, but also in how your customers currently interact with your website, improving sales in the short term and overall customer satisfaction in the long term.
-
-The report also includes:
-
-- An analysis of your current process
-- A revised process
-- A tool list with immediately actionable steps in order to implement that revised process
-- An implementation plan to help you adopt the tools
-- A custom worksheet to track the results
-
-This service is ideal for online businesses with 3 employees or less. The reason for this is that, differently from physical businesses, internet-based companies don't require as much physical presence for operational analysis.
-
-#### Every hour not saved is an hour wasted.
-
-Stop wasting your energy, and reclaim your right to spend your time doing the work you actually started your business to do.
-
-Type in your email below and you'll get a few questions which I've designed to better understand your current process, and from then I'll see if we're a good fit and we'll schedule our conversation.
-
+**Fill in your name and e-mail below, and press &rdquo;send&rdquo;**. You'll soon get a few questions that will help me understand you and your business, and if we're a good fit, from then we'll schedule time for our first conversation.
 
 ");
 
@@ -77,20 +56,21 @@ Type in your email below and you'll get a few questions which I've designed to b
   <input type="hidden" name="user_id" value="OV8HJYTVSWRPUJ73CYWU">
   <input type="hidden" name="form_id" value="1">
   <div class="row">
-    <div class="six columns">
-      <label for="exampleEmailInput">Your name</label>
-      <input class="u-full-width" type="text" placeholder="test@mailbox.com" name="name">
+    <div class="five columns">
+      <input class="u-full-width" type="text" placeholder="Your name" name="name">
     </div>
-    <div class="six columns">
-      <label for="exampleEmailInput">Your email</label>
-      <input class="u-full-width" type="email" placeholder="test@mailbox.com" name="email">
+    <div class="five columns">
+      <input class="u-full-width" type="email" placeholder="your@email.com" name="email">
+    </div>
+    <div class="two columns">
+      <div style="text-align: right"><input class="button-primary" type="submit" value="Send"></div>
     </div>
   </div>
 <!--   <label class="example-send-yourself-copy">
     <input type="checkbox">
     <span class="label-body">Send a copy to yourself</span>
   </label>
- -->  <div style="text-align: center"><input class="button-primary" type="submit" value="Get contacted"></div>
+ -->  
 </form>
 
 
