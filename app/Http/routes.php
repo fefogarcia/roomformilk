@@ -15,7 +15,7 @@
 
 Route::get('/', function() {
 
-	return redirect('/express/');
+	return redirect('/articles/');
 
 });
 
@@ -88,6 +88,14 @@ Route::get('articles/', function() {
 	$articles = App\Article::all();
 
 	return View::make('articles.articles', ['articles' => $articles]);
+
+});
+
+Route::get('consulting', function() {
+
+	$page = \DB::table('pages')->where('id', 'consulting')->first();
+
+	return view('consulting', ['text' => $page->text]);
 
 });
 
