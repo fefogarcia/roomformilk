@@ -1,5 +1,7 @@
 @extends('articles.index')
 
+@section('title', 'Room For Milk :: ' . $article->headline)
+
 @section('content')
 
 <div class="row">
