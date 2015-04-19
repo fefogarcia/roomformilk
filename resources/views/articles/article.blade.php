@@ -19,7 +19,7 @@
 		<form action="//themajorofficial.us1.list-manage.com/subscribe/post?u=8bf6015af5ddfba77d30c7db9&amp;id=7ae91179df" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>  
 		    <div id="mc_embed_signup_scroll">
 		    <h5>Liked this post?</h5>
-		    <p>Sign up below and receive weekly e-mails with tips on harnessing technology to improve your work productivity.</p>
+		    <p>Sign up below and receive weekly e-mails with tips on harnessing technology to improve your brand.</p>
 
 		<div class="row">
 
@@ -67,6 +67,6 @@
 
 </div>
 
-<script src="//my.hellobar.com/65ffe1b5e60bbccad215df6ede004b88fa4f9547.js" type="text/javascript" charset="utf-8" async="async"></script>
+<!-- <script src="//my.hellobar.com/65ffe1b5e60bbccad215df6ede004b88fa4f9547.js" type="text/javascript" charset="utf-8" async="async"></script> -->
 
 @stop
