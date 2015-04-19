@@ -49,6 +49,8 @@ Route::get('logo/{width}/{height}/{type}', function($width, $height, $type) {
 
 Route::get('express/', function() {
 
+	return redirect('/');
+
 	$products = App\Product::all();
 
 	return View::make('express/products', ['products' => $products, 'count' => 0]);
@@ -94,6 +96,8 @@ Route::get('articles/', function() {
 });
 
 Route::get('consulting', function() {
+
+	return redirect('/articles/');
 
 	$page = \DB::table('pages')->where('id', 'consulting')->first();
 
