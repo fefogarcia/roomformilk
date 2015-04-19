@@ -67,5 +67,6 @@
 
 </div>
 
+<script src="//my.hellobar.com/65ffe1b5e60bbccad215df6ede004b88fa4f9547.js" type="text/javascript" charset="utf-8" async="async"></script>
 
 @stop
