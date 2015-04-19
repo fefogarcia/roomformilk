@@ -85,7 +85,9 @@ Route::get('about/', function() {
 
 Route::get('articles/', function() {
 
-	$articles = App\Article::all();
+	// $articles = App\Article::all();
+
+	$articles = App\Article::where('published', '=', 1)->orderBy('date_published', 'desc')->get();
 
 	return View::make('articles.articles', ['articles' => $articles]);
 
@@ -101,7 +103,7 @@ Route::get('consulting', function() {
 
 Route::get('articles/id/{articleId}', function($articleId) {
 
-	$articles = App\Article::all();
+	$articles = App\Article::where('published', '=', 1)->where('id', '!=', $articleId)->orderBy('date_published', 'desc')->take(5)->get();
 
 	$article = App\Article::find($articleId);
 
