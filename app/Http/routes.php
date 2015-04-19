@@ -59,6 +59,8 @@ Route::get('express/', function() {
 
 Route::get('express/{productId}/', function($productId) {
 
+	return redirect('/');
+
 	$products = App\Product::all();
 
 	$product = App\Product::find($productId);
