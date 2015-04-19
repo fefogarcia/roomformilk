@@ -56,7 +56,7 @@
 
 @foreach ($articles as $article)
 
-			<li><a href="/articles/id/{{ $article->id }}">{{ $article->headline }}</a></li>
+			<li><a href="/articles/{{ $article->slug }}">{{ $article->headline }}</a></li>
 
 @endforeach
 

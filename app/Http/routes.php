@@ -103,13 +103,24 @@ Route::get('consulting', function() {
 
 Route::get('articles/id/{articleId}', function($articleId) {
 
-	$articles = App\Article::where('published', '=', 1)->where('id', '!=', $articleId)->orderBy('date_published', 'desc')->take(5)->get();
+	// $articles = App\Article::where('published', '=', 1)->where('id', '!=', $articleId)->orderBy('date_published', 'desc')->take(5)->get();
 
 	$article = App\Article::find($articleId);
+
+	return Redirect::to('articles/' . $article->slug);
+
+});
+
+Route::get('articles/{articleSlug}', function($articleSlug) {
+
+	$articles = App\Article::where('published', '=', 1)->where('slug', '!=', $articleSlug)->orderBy('date_published', 'desc')->take(5)->get();
+
+	$article = App\Article::where('slug','=', $articleSlug)->first();
 
 	return View::make('articles.article', ['article' => $article, 'articles' => $articles]);
 
 });
+
 
 Route::get('get/{landingPageId}/', function($landingPageId) {
 
