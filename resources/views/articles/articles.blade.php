@@ -6,7 +6,7 @@
 
 	<div class="ten columns offset-by-one">
 
-		<h5>This is where I keep most of my writing about productivity and automation.</h5>
+		<h5>This is where I keep my writing.</h5>
 
 @foreach ($articles as $article)
 
