@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>@yield('title')</title>
+  <title>@yield('title', 'Room For Milk')</title>
 
   @yield('meta', '
 
