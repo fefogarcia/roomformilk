@@ -14,6 +14,7 @@
 <meta property="og:image" content="http://roomformilk.net/images/article-headers/{{ $article->id }}.jpg" />
 
 <meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@talktofefo" />
 <meta name="twitter:url" content="http://roomformilk.net/articles/{{ $article->slug }}" />
 <meta name="twitter:title" content="{{ $article->headline }}" />
 <meta name="twitter:description" content="{{ $article->description }}" />
