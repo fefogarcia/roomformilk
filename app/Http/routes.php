@@ -29,25 +29,12 @@ Route::controllers([
 
 Route::get('logo/{width}/{height}/{type}', function($width, $height, $type) {
 
-	// Create a new empty image resource in the chosen size
-	$img = Image::canvas($width, $height);
-
-	// Loads appropriate logo file and resizes it
-	$logo = Image::make('images/logo-' . $type . '.png');
-	$logo->resize($width, null, function ($constraint) {
-    	$constraint->aspectRatio();
-	});
-
-	// Pastes logo on canvas
-	$img->insert($logo, 'center');
-
-	// Displays image
-    return $img->response('png');
+	return App\Logo::render($width, $height, $type);
 
 });
 
 
-Route::get('express/', function() {
+Route::get('express', function() {
 
 	return redirect('/');
 
@@ -57,9 +44,9 @@ Route::get('express/', function() {
 
 });
 
-Route::get('express/{productId}/', function($productId) {
+Route::get('express/{productId}', function($productId) {
 
-	return redirect('/');
+	// return redirect('/');
 
 	$products = App\Product::all();
 
@@ -69,7 +56,7 @@ Route::get('express/{productId}/', function($productId) {
 
 });
 
-Route::get('contact/', function() {
+Route::get('contact', function() {
 
 	$success = '';
 
@@ -81,13 +68,15 @@ Route::get('contact/', function() {
 
 });
 
-Route::get('about/', function() {
+Route::get('about', function() {
 
-	return View::make('about');
+	$page = \DB::table('pages')->where('id', 'about')->first();
+
+	return View::make('about', ['text' => $page->text]);
 
 });
 
-Route::get('articles/', function() {
+Route::get('articles', function() {
 
 	// $articles = App\Article::all();
 
@@ -99,7 +88,7 @@ Route::get('articles/', function() {
 
 Route::get('consulting', function() {
 
-	return redirect('/articles/');
+	return redirect('/articles');
 
 	$page = \DB::table('pages')->where('id', 'consulting')->first();
 

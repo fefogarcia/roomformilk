@@ -4,18 +4,7 @@
 
 @section('subheader')
 
-<div id="subheader-wrapper" style="background-image: url('/images/{{ $product->id }}.jpg')">
-	<div class="full-width" id="subheader">
-	  <div class="container">
-	    <div class="row">
-	      <div class="eight columns offset-by-two">
-			<br/><br/><br/><br/><br/>
-			<h3>{{ $landingPage->headline }}</h3>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-</div>
+@include('subviews.subheader', ['imageUrl' => '/images/' . $product->id . '.jpg', 'headlineText' => $landingPage->headline, 'class' => 'eight columns offset-by-two'])
 
 @stop
 

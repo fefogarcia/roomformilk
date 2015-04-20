@@ -6,10 +6,17 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>@yield('title')</title>
-  <meta name="description" content="Room For Milk is a business consultancy specialized in online marketing and strategic technology.">
-  <meta name="author" content="Felipe Garcia">
 
-  @yield('meta')
+  @yield('meta', '
+
+  <meta property="og:title" content="Room For Milk" />
+  <meta property="og:site_name" content="Room For Milk"/>
+  <meta property="og:description" content="Room For Milk is a business consultancy specialized in online marketing and strategic technology." />
+  <meta property="og:url" content="http://roomformilk.net/" />
+  <meta property="og:locale" content="en_US" />  
+  <meta property="og:image" content="http://roomformilk.net/images/og-image.jpg" />
+
+  ')
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

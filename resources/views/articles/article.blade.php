@@ -25,18 +25,7 @@
 
 @section('subheader')
 
-<div id="subheader-wrapper" style="background-image: url('/images/article-headers/{{ $article->id }}.jpg')">
-	<div class="full-width" id="subheader">
-	  <div class="container">
-	    <div class="row">
-	      <div class="ten columns offset-by-one">
-			<br/><br/><br/><br/><br/>
-			<h3>{{ $article->headline }}</h3>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-</div>
+@include('subviews.subheader', ['imageUrl' => '/images/article-headers/' . $article->id . '.jpg', 'headlineText' => $article->headline, 'class' => 'ten columns offset-by-one'])
 
 @stop
 
