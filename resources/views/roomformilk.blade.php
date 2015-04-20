@@ -6,7 +6,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>@yield('title')</title>
-  <meta name="description" content="Room For Milk is a business consultancy specialized in staying on top of current online marketing technology.">
+  <meta name="description" content="Room For Milk is a business consultancy specialized in online marketing and strategic technology.">
   <meta name="author" content="Felipe Garcia">
 
   @yield('meta')
