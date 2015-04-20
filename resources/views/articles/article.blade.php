@@ -78,27 +78,39 @@
 
 		<!--End mc_embed_signup-->
 		
-		<div style="text-align: right">
+<!-- 		<div style="text-align: left">
 			<span class='st_facebook_large' displayText='Facebook'></span>
 			<span class='st_twitter_large' displayText='Tweet'></span>
 			<span class='st_linkedin_large' displayText='LinkedIn'></span>
 			<span class='st_googleplus_large' displayText='Google +'></span>
 			<span class='st_email_large' displayText='Email'></span>
 		</div>
-
+ -->
 		<br/>
+
+	</div>
+
+</div>
+
+<div class="row">
+
+	<div class="ten columns offset-by-one">
 
 		<h5>More Articles</h5>
 
-		<ul>
+		<div class="row">
 
 @foreach ($articles as $article)
 
-			<li><a href="/articles/{{ $article->slug }}">{{ $article->headline }}</a></li>
+			<div class="four columns">
+				<a href="/articles/{{ $article->slug }}"><div class="article-image" style="background-image: url('/images/article-headers/{{ $article->id }}.jpg')">&nbsp;</div></a>
+				<h6><a href="/articles/{{ $article->slug }}">{{ $article->headline }}</a></h6>
+			</div>
 
 @endforeach
 
-		</ul>
+		</div>
+
 
 
 	</div>
