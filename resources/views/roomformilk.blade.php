@@ -6,8 +6,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>@yield('title')</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Room For Milk is a business consultancy specialized in staying on top of current online marketing technology.">
+  <meta name="author" content="Felipe Garcia">
+
+  @yield('meta')
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -38,6 +40,10 @@
     ga('send', 'pageview');
 
   </script>
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "6b8a9776-515f-4939-b214-32185a85502c", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 </head>
 <body>

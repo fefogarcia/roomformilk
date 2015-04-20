@@ -49,9 +49,10 @@
   }
 
   #subheader-wrapper {
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
     background-position: center;
-    background-size: 100%;
+    /*background-size: 100%;*/
+    background-size: cover;
     background-repeat: no-repeat;    
   }
 
@@ -108,6 +109,31 @@
 
   }
 
+  .article-image {
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+  }
+
   h2 span {
     display: inline-block;
   }
+
+  h6 {
+    font-size: 1.8rem;
+  }
+
+  h6 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h6 a:hover {
+
+    text-decoration: underline;
+    color: inherit;
+
+  };

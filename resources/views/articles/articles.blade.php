@@ -10,7 +10,14 @@
 
 @foreach ($articles as $article)
 
-		<li><a href="/articles/{{ $article->slug }}">{{ $article->headline }}</a></li>
+<div class="row">
+
+<div class="three columns"><div class="article-image" style="background-image: url('/images/article-headers/{{ $article->id }}.jpg')">&nbsp;</div></div>
+<div class="nine columns"><h6><a href="/articles/{{ $article->slug }}">{{ $article->headline }}</a></h6></div>
+
+</div>
+
+<br/>
 
 @endforeach
 
