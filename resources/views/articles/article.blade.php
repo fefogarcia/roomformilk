@@ -8,14 +8,15 @@
 <meta property="og:site_name" content="Room For Milk"/>
 <meta property="og:description" content="{{ $article->description }}" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://roomformilk.net/articles/{{ $article->slug }}" />
+<meta property="og:url" content="http://roomformilk.net/articles/{{ $article->slug }}/" />
 <meta property="og:locale" content="en_US" />  
 <meta property="article:author" content="https://www.twitter.com/talktofefo" />
 <meta property="og:image" content="http://roomformilk.net/images/article-headers/{{ $article->id }}.jpg" />
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@talktofefo" />
-<meta name="twitter:url" content="http://roomformilk.net/articles/{{ $article->slug }}" />
+<meta name="twitter:creator" content="@talktofefo" />
+<meta name="twitter:url" content="http://roomformilk.net/articles/{{ $article->slug }}/" />
 <meta name="twitter:title" content="{{ $article->headline }}" />
 <meta name="twitter:description" content="{{ $article->description }}" />
 <meta name="twitter:image" content="http://roomformilk.net/images/article-headers/{{ $article->id }}.jpg" />
@@ -110,8 +111,8 @@
 @foreach ($articles as $article)
 
 			<div class="four columns">
-				<a href="/articles/{{ $article->slug }}"><div class="article-image" style="background-image: url('/images/article-headers/{{ $article->id }}.jpg')">&nbsp;</div></a>
-				<h6><a href="/articles/{{ $article->slug }}">{{ $article->headline }}</a></h6>
+				<a href="/articles/{{ $article->slug }}/"><div class="article-image" style="background-image: url('/images/article-headers/{{ $article->id }}.jpg')">&nbsp;</div></a>
+				<h6><a href="/articles/{{ $article->slug }}/">{{ $article->headline }}</a></h6>
 			</div>
 
 @endforeach
