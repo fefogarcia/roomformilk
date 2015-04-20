@@ -111,7 +111,7 @@
       </div>
       <div class="four columns">
         <div style="text-align: center">
-          <a href="/"><img src="/logo/400/100/light" style="width: 100%" /></a>
+          <a href="/"><img src="/logo/400/50/light" style="width: 100%" /></a>
         </div>
       </div>
     </div>

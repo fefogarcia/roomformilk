@@ -13,7 +13,7 @@
 <meta property="article:author" content="https://www.twitter.com/talktofefo" />
 <meta property="og:image" content="http://roomformilk.net/images/article-headers/{{ $article->id }}.jpg" />
 
-<meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@talktofefo" />
 <meta name="twitter:creator" content="@talktofefo" />
 <meta name="twitter:url" content="http://roomformilk.net/articles/{{ $article->slug }}/" />
