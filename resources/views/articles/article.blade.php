@@ -89,6 +89,8 @@
 
 </div>
 
+<!-- include('subviews.more', ['class' => 'ten columns offset-by-one', 'list' => $articles]) -->
+
 <div class="row">
 
 	<div class="ten columns offset-by-one">
@@ -107,8 +109,6 @@
 @endforeach
 
 		</div>
-
-
 
 	</div>
 
