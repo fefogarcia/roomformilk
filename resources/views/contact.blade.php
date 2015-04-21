@@ -14,8 +14,6 @@
 
 <p>Use the form below to get in touch, and I should respond within 24 hours.</p>
 
-<p>For <strong>Room For Milk Express</strong> products, please buy directly from the <a href="/express/">product page</a>.</p>
-
 <!-- The above form looks like this -->
 <form action="http://formtoemail.com/user_forms.php" method="post">
   <input type="hidden" name="user_id" value="OV8HJYTVSWRPUJ73CYWU">
