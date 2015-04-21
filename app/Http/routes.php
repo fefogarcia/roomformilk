@@ -108,7 +108,7 @@ Route::get('articles/id/{articleId}', function($articleId) {
 
 Route::get('articles/{articleSlug}', function($articleSlug) {
 
-	$articles = App\Article::where('published', '=', 1)->where('slug', '!=', $articleSlug)->orderBy('date_published', 'desc')->take(5)->get();
+	$articles = App\Article::where('published', '=', 1)->where('slug', '!=', $articleSlug)->orderBy('date_published', 'desc')->take(3)->get();
 
 	$article = App\Article::where('slug','=', $articleSlug)->first();
 
